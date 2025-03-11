@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ✅ Branding Section */
+.branding-section {
+    padding: 50px 20px;
+    background-color: #050505;
+}
+
+/* ✅ Content Layout */
+/* .branding-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+} */
+
+/* ✅ Image Section */
+.branding-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.smm-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+
+.smm-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #9519C1;
+    font-weight: 600;
+}
+
+.smm-content p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 275;
+}
+.btn-smm {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9519C1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-smm:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* Tablets & Smaller Devices */
+@media (max-width: 992px) {
+    .branding-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .smm-content h2 {
+        font-size: 28px;
+    }
+
+    .branding-image {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    .smm-content h2 {
+        font-size: 24px;
+    }
+
+    .smm-content p {
+        font-size: 14px;
+    }
+
+    .btn-smm {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 576px) {
+    .smm-content h2 {
+        font-size: 22px;
+    }
+
+    .btn-smm {
+        font-size: 13px;
+        padding: 7px 16px;
+    }
+}
+
+/* ✅ Branding Services Section */
+.branding-services {
+    padding: 50px 20px;
+    text-align: center;
+    color: #9519C1;
+    
+}
+.branding-services h2{
+    font-weight: 600;
+}
+
+/* ✅ Grid Layout */
+.branding-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ✅ Individual Card */
+.branding-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.branding-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ✅ Card Image */
+.branding-card img {
+    width: 30%;
+    border-radius: 12px 12px 0 0;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ✅ Card Title */
+.branding-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+    text-align: center;
+}
+
+/* ✅ Card Description */
+.branding-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* ✅ Learn More Link */
+.branding-card a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #9519C1;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+}
+
+.branding-card a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* 🖥️ Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    .branding-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+        gap: 20px;
+    }
+}
+
+/* 📱 Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .branding-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 15px;
+    }
+}
+
+/* 📱 Small Tablets & Large Phones */
+@media (max-width: 768px) {
+    .branding-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 15px;
+    }
+
+    .branding-card {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .branding-card img {
+        width: 30%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .branding-card h3 {
+        font-size: 16px;
+    }
+
+    .branding-card p {
+        font-size: 14px;
+    }
+
+    .branding-card a {
+        font-size: 14px;
+    }
+}
+
+/* 📱 Mobile Devices */
+@media (max-width: 576px) {
+    .branding-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .branding-card {
+        padding: 12px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: none; /* Cleaner mobile look */
+    }
+
+    .branding-card img {
+        width: 30%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .branding-card h3 {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .branding-card p {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .branding-card a {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+/* Branding Banner Section */
+.branding-banner {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Full screen height */
+    background: url('images.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* Overlay Effect */
+.branding-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Content Styling */
+.branding-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Branding Heading */
+.branding-content h1 {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #9519C1;
+}
+
+/* Branding Subtext */
+.branding-content p {
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: 375
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9519C1;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #7a1399;
+}
+
+/* ✅ Responsive Design */
+
+/* Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .branding-content h1 {
+        font-size: 50px;
+    }
+
+    .branding-content p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .branding-content h1 {
+        font-size: 40px;
+    }
+
+    .branding-content p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 576px) {
+    .branding-content h1 {
+        font-size: 32px;
+    }
+
+    .branding-content p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 12px;
+        padding: 8px 18px;
+    }
+}
+
+
+
+
+
+/* Process Section */
+.process-section {
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Container */
+.container-proceses {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Process Container */
+.process-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Process Step */
+.process-step {
+    flex: 1;
+    max-width: 22%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Process Icon */
+.process-step img {
+    width: 50px;  /* Adjust size */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Step Title */
+.process-step h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #9519C1; /* Dark Blue */
+}
+
+/* Step Description */
+.process-step p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 275;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .process-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .process-step {
+        max-width: 45%;  /* 2 steps per row */
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .process-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .process-step {
+        max-width: 80%; /* 1 step per row */
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 576px) {
+    .process-step {
+        max-width: 100%; /* Full width on very small devices */
+        padding: 15px;
+    }
+
+    .process-step img {
+        width: 40px;  /* Smaller icons */
+    }
+
+    .process-step h3 {
+        font-size: 16px;
+    }
+
+    .process-step p {
+        font-size: 13px;
+    }
+}
+
+
+/* FAQ Section */
+.faq-section {
+    /* max-width: 800px; */
+    margin: 50px auto;
+    padding: 20px;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+/* FAQ Title */
+.faq-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* FAQ Container */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* FAQ Item */
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+/* Question */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+
+.faq-toggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Answer (Hidden by Default) */
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 375;
+}
+
+/* When Open */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-toggle {
+    color: #ff0000;
+    transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-section {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    .faq-question h3 {
+        font-size: 16px;
+    }
+
+    .faq-toggle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 596px) {
+    .faq-question h3 {
+        font-size: 14px;
+    }
+
+    .faq-toggle {
+        font-size: 18px;
+    }
+}
+
+
+
+/* ✅ Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #050505; /* Adjust background color */
+}
+
+/* ✅ Contact Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    gap: 40px;
+}
+
+/* ✅ Left Section: Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #9519C1;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* ✅ Profile Info */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ✅ Right Section: Contact Form */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+   
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Form Fields */
+.input-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping */
+    gap: 15px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #9519C1;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ✅ Adjust Textarea */
+.input-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* ✅ Phone Input */
+.phone-input {
+    display: flex;
+    gap: 5px;
+}
+
+.phone-input select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.phone-input input {
+    flex: 1;
+}
+
+/* ✅ Character Counter */
+.char-count {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+}
+
+/* ✅ Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    background: #9519C1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #222;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* 📱 Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-info h2 {
+        font-size: 30px;
+    }
+
+    .profile {
+        justify-content: center;
+    }
+}
+
+/* 📱 Small Tablets & Large Phones */
+@media (max-width: 768px) {
+    .contact-info h2 {
+        font-size: 26px;
+    }
+
+    .input-row {
+        flex-direction: column; /* Stack inputs */
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+    }
+}
+
+/* 📱 Small Mobile Devices */
+@media (max-width: 526px) {
+    .contact-info h2 {
+        font-size: 22px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+/* FAQ Section */
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #050505;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #fff;
+}
+
+/* FAQ Title */
+.faq-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #9519C1;
+}
+
+/* FAQ Item */
+.faq-item {
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+
+/* Question */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+}
+
+/* Toggle Icon */
+.faq-toggle {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+/* Answer (Initially Hidden) */
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Active State */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+    color: #9519C1;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+    .faq-section {
+        padding: 15px;
+        margin: 30px auto;
+    }
+    .faq-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-question h3 {
+        font-size: 16px;
+    }
+    .faq-toggle {
+        font-size: 20px;
+    }
+    .faq-answer {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .faq-section {
+        padding: 10px;
+        margin: 20px auto;
+        width: 95%;
+    }
+    .faq-title {
+        font-size: 20px;
+    }
+    .faq-question h3 {
+        font-size: 15px;
+    }
+    .faq-toggle {
+        font-size: 18px;
+    }
+    .faq-answer {
+        font-size: 14px;
+    }
+}
+
+
+
+
+

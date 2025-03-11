@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+padding: 0;
+color: #333;
+background-color: #000;
+}
+.web-hosting-section {
+padding: 50px 20px;
+
+color: #fff;
+}
+
+.hosting-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 1200px;
+margin: auto;
+gap: 40px;
+}
+
+.hosting-image,
+.hosting-text {
+flex: 1;
+}
+
+.hosting-image img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+max-width: 500px;
+}
+
+.hosting-text h2 {
+font-size: 32px;
+margin-bottom: 15px;
+color: #9519C1;
+font-weight: 600;
+}
+
+.hosting-text p {
+font-size: 16px;
+line-height: 1.6;
+font-weight: 275;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+.hosting-content {
+  flex-direction: column;
+  text-align: center;
+}
+
+.hosting-image,
+.hosting-text {
+  max-width: 100%;
+}
+
+.hosting-image img {
+  max-width: 80%;
+}
+}
+
+@media (max-width: 576px) {
+.hosting-text h2 {
+  font-size: 24px;
+}
+
+.hosting-text p {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.hosting-image img {
+  max-width: 100%;
+}
+}
+
+
+
+
+.hosting-services {
+padding: 60px 20px;
+text-align: center;
+color: #333;
+
+}
+
+.section-title {
+font-size: 34px;
+margin-bottom: 15px;
+font-weight: 600;
+color: #9519C1;
+}
+
+.section-subtitle {
+font-size: 16px;
+margin-bottom: 40px;
+color: #fff;
+font-weight: 375;
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+max-width: 1200px;
+margin: auto;
+}
+
+.service-item {
+padding: 20px;
+text-align: left;
+background: #f8f8f8;
+border-radius: 10px;
+transition: transform 0.3s ease;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.service-item:hover {
+transform: translateY(-10px);
+}
+
+.service-item .icon {
+font-size: 30px;
+color:  #9519C1;
+background: #eee;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 15px;
+}
+
+.service-item h3 {
+font-size: 20px;
+color:  #9519C1;
+margin-bottom: 10px;
+font-weight: 600;
+}
+
+.service-item p {
+font-size: 14px;
+color: #000;
+font-weight: 375;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+.services-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+.services-grid {
+  grid-template-columns: 1fr;
+}
+
+.service-item {
+  text-align: center;
+  align-items: center;
+}
+}
+
+
+.hosting-banner {
+background-image: url('images.jpg');
+background-size: cover;
+background-position: center;
+color: #fff;
+text-align: center;
+padding: 100px 20px;
+position: relative;
+}
+
+.banner-content {
+max-width: 800px;
+margin: auto;
+}
+
+.banner-content h1 {
+font-size: 48px;
+font-weight: bold;
+margin-bottom: 15px;
+color: #9519C1;
+font-weight: 600;
+}
+
+.banner-content p {
+font-size: 20px;
+margin-bottom: 30px;
+font-weight: 375;
+}
+
+.btn-find-plan {
+display: inline-block;
+padding: 12px 25px;
+background-color: #9519C1;
+color: #fff;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+transition: background-color 0.3s;
+}
+
+.btn-find-plan:hover {
+background-color: #9519C1;
+}
+
+/* ✅ RESPONSIVE STYLES */
+
+/* Tablets */
+@media (max-width: 992px) {
+.hosting-banner {
+    padding: 80px 20px;
+}
+
+.banner-content h1 {
+    font-size: 38px;
+}
+
+.banner-content p {
+    font-size: 18px;
+}
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+.hosting-banner {
+    padding: 60px 15px;
+}
+
+.banner-content h1 {
+    font-size: 32px;
+}
+
+.banner-content p {
+    font-size: 16px;
+}
+
+.btn-find-plan {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+}
+
+/* Small Mobile Screens */
+@media (max-width: 576px) {
+.hosting-banner {
+    padding: 50px 10px;
+}
+
+.banner-content h1 {
+    font-size: 26px;
+}
+
+.banner-content p {
+    font-size: 14px;
+}
+
+.btn-find-plan {
+    padding: 8px 18px;
+    font-size: 13px;
+}
+}
+
+
+
+/* FAQ Section */
+.faq-section {
+max-width: 800px;
+margin: 40px auto;
+padding: 20px;
+background-color: #050505;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+color: #fff;
+}
+
+/* FAQ Title */
+.faq-title {
+font-size: 28px;
+font-weight: bold;
+text-align: center;
+margin-bottom: 25px;
+color: #9519C1;
+}
+
+/* FAQ Item */
+.faq-item {
+border-bottom: 1px solid #333;
+padding: 15px 0;
+}
+
+/* Question */
+.faq-question {
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+}
+
+.faq-question h3 {
+font-size: 18px;
+margin: 0;
+color: #fff;
+font-weight: 600;
+}
+
+/* Toggle Icon */
+.faq-toggle {
+font-size: 22px;
+transition: transform 0.3s ease;
+}
+
+/* Answer (Initially Hidden) */
+.faq-answer {
+display: none;
+padding-top: 10px;
+font-size: 16px;
+line-height: 1.6;
+color: #fff;
+font-weight: 375;
+}
+
+/* Active State */
+.faq-item.active .faq-answer {
+display: block;
+}
+
+.faq-item.active .faq-toggle {
+transform: rotate(180deg);
+color: #9519C1;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+.faq-section {
+    padding: 15px;
+    margin: 30px auto;
+}
+.faq-title {
+    font-size: 24px;
+}
+}
+
+@media (max-width: 768px) {
+.faq-question h3 {
+    font-size: 16px;
+}
+.faq-toggle {
+    font-size: 20px;
+}
+.faq-answer {
+    font-size: 15px;
+}
+}
+
+@media (max-width: 576px) {
+.faq-section {
+    padding: 10px;
+    margin: 20px auto;
+    width: 95%;
+}
+.faq-title {
+    font-size: 20px;
+}
+.faq-question h3 {
+    font-size: 15px;
+}
+.faq-toggle {
+    font-size: 18px;
+}
+.faq-answer {
+    font-size: 14px;
+}
+}

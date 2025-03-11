@@ -1,0 +1,1246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Section Styling */
+/* .web-app-section, .trusted-partner-section {
+    padding: 60px 20px;
+} */
+
+/* Text Content */
+/* .text-content {
+    text-align: left;
+} */
+
+.sub-heading {
+    color: #fff;
+    font-size: 1.125rem; /* 18px */
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.main-heading {
+    font-size: 20px; /* 40px */
+    font-weight: 600;
+    color: #9519C1 ;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem; /* 16px */
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 275;
+}
+
+/* Button Styling */
+.custom-btn {
+    background: linear-gradient(90deg, #E74CBF 0%, #3E026F 100%);    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: #7a1399;
+}
+
+/* Image Styling */
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    .main-heading {
+        font-size: 2rem; /* 32px */
+    }
+
+    .description {
+        font-size: 1rem; /* 16px */
+    }
+}
+
+/* Tablets & Medium Screens */
+@media (max-width: 992px) {
+    /* .text-content {
+        text-align: center;
+    } */
+
+    .image-content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-heading {
+        font-size: 1.35rem; /* 28px */
+    }
+
+    .sub-heading {
+        font-size: 1rem; /* 16px */
+    }
+
+    .description {
+        font-size: 0.938rem; /* 15px */
+    }
+
+    .custom-btn {
+        padding: 10px 18px;
+        font-size: 0.938rem; /* 15px */
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .sub-heading {
+        font-size: 0.938rem; /* 15px */
+    }
+
+    .description {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .custom-btn {
+        padding: 10px 16px;
+        font-size: 0.875rem; /* 14px */
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 596px) {
+    .main-heading {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .sub-heading {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .description {
+        font-size: 0.813rem; /* 13px */
+    }
+
+    .custom-btn {
+        padding: 8px 14px;
+        font-size: 0.813rem; /* 13px */
+    }
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Feature Box */
+.feature-box {
+    background-color: #9519C1; /* Light purple */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+/* Heading Styling */
+.feature-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Paragraph Styling */
+.feature-box p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 275;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    .feature-box {
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .features-section {
+        padding: 50px 15px;
+    }
+
+    .feature-box {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 90%;
+        padding: 18px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .features-section {
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .feature-box {
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .feature-box h3 {
+        font-size: 18px;
+    }
+
+    .feature-box p {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 586px) {
+    .features-section {
+        justify-content: center;
+        padding: 30px 5px;
+        width: 100%;
+    }
+
+    .feature-box {
+        padding: 12px;
+        width: 100%;
+        max-width: 99%;
+        justify-content: center;
+    }
+
+    .feature-box h3 {
+        font-size: 16px;
+    }
+
+    .feature-box p {
+        font-size: 13px;
+    }
+
+    .icon img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* Why Hire Us Section */
+.why-hire-section {
+    padding: 60px 20px;
+}
+
+/* Main Heading */
+.main-headings {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #9519C1;
+    text-align: center;
+}
+
+/* Feature Cards */
+.feature-card {
+    background-color: #f8faff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.feature-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* Heading and Paragraph */
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #050505;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Centered Card */
+.center-card {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsive Adjustments */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    .feature-card {
+        max-width: 350px;
+        justify-content: center;
+    }
+}
+
+/* Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .main-heading {
+        font-size: 30px;
+    }
+
+    .feature-card {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 90%;
+        justify-content: center;
+    }
+
+    .center-card {
+        max-width: 100%;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .feature-card {
+        padding: 15px;
+        width: 100%;
+        max-width: 95%;
+        justify-content: center;
+    }
+
+    .feature-card h3 {
+        font-size: 18px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 596px) {
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .feature-card {
+        padding: 12px;
+        width: 100%;
+        max-width: 98%;
+        justify-content: center;
+    }
+
+    .feature-card h3 {
+        font-size: 18px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+    }
+}
+
+
+/* Technology Stack Section */
+.tech-stack-section {
+    padding: 60px 0;
+}
+
+/* Main Heading */
+.main-headings {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 16px;
+    color: #f8faff;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.tab-btn.active {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Tab Content */
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Tech Cards */
+.tech-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: auto; /* Allow dynamic height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fix Image Size & Alignment */
+.tech-card img {
+    width: 20px; /* Increase size for better visibility */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 40%; /* Prevent overflow */
+    object-fit: contain; /* Ensure it doesn't stretch */
+    margin-bottom: 15px;
+    align-self: center; /* Ensure it's centered in flex container */
+}
+
+/* Hover Effect */
+/* .tech-card:hover {
+    transform: translateY(-5px);
+} */
+
+/* Heading and Paragraph */
+.tech-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #050505;
+}
+
+.tech-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0; /* Remove extra margin */
+}
+
+/* OWL Carousel Adjustments */
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 992px) {
+    .main-heading {
+        font-size: 28px;
+    }
+
+    /* Tab Buttons */
+    .tab-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .tab-btn {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    /* Tech Card Adjustments */
+    .tech-card {
+        padding: 15px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 26px;
+    }
+
+    .tab-buttons {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    /* Make Tech Cards Full Width */
+    .tech-card {
+        padding: 15px;
+        height: auto;
+        width: 100%;
+        max-width: 90%;
+        justify-content: center;
+    }
+
+    /* Owl Carousel Adjustments */
+    .owl-carousel .owl-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .owl-carousel .owl-stage {
+        display: flex;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 596px) {
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .tab-btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .tech-card h3 {
+        font-size: 18px;
+    }
+
+    .tech-card p {
+        font-size: 14px;
+    }
+
+    /* Ensure Cards Fit on Mobile */
+    .tech-card {
+        padding: 12px;
+        width: 100%;
+        max-width: 95%;
+        justify-content: center;
+    }
+}
+
+/* Secret Sauce Section */
+.secret-sauce-section {
+    padding: 60px 20px;
+    background-color: #9519C1; /* Light Purple Background */
+    text-align: center;
+}
+
+/* Main Heading */
+.main-headings {
+    font-size: 32px;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.descriptions {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 275;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+/* Responsive Design Adjustments */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    .main-heading {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+}
+
+/* Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 15px;
+        max-width: 90%;
+        padding: 0 5px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 596px) {
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+        max-width: 95%;
+        padding: 0 5px;
+    }
+}
+
+
+
+
+/* Web Development Process Section */
+.web-process-section {
+    padding: 80px 20px;
+   
+    text-align: center;
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #9519C1;
+}
+
+/* Sub Text */
+.sub-text {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    color: #f8faff;
+}
+
+/* Process Container */
+.process-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Process Step */
+.process-step {
+    position: relative;
+    text-align: center;
+    max-width: 180px;
+    flex: 1;
+}
+
+/* Step Circle */
+.step-circle {
+    width: 90px;
+    height: 90px;
+    background: #9519C1;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+/* Step Title */
+.process-step h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Step Description */
+.process-step p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Arrow Styling */
+.arrow {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background: url('arrow.png') no-repeat center;
+    background-size: contain;
+    transform: translateY(-50%);
+}
+
+/* Hide Arrow for the Last Step */
+.process-step:last-child .arrow {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .main-heading {
+        font-size: 30px;
+    }
+
+    .sub-text {
+        font-size: 16px;
+    }
+
+    .process-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .process-step {
+        max-width: 150px;
+    }
+
+    .step-circle {
+        width: 75px;
+        height: 75px;
+        font-size: 18px;
+    }
+
+    .arrow {
+        right: -30px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 26px;
+    }
+
+    .sub-text {
+        font-size: 14px;
+    }
+
+    .process-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .process-step {
+        max-width: 100%;
+    }
+
+    .step-circle {
+        width: 70px;
+        height: 70px;
+        font-size: 16px;
+    }
+
+    .arrow {
+        display: none; /* Hides arrow in stacked mobile layout */
+    }
+}
+
+
+
+
+/* Title Styling */
+.main-title {
+    color: #9519C1;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    overflow-y: hidden;
+}
+
+/* Section Styling */
+.team-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container */
+.container-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Team Cards */
+.team-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+   
+    transition: transform 0.3s, background 0.3s;
+    width: calc(20% - 20px); /* 5 cards in one row */
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Icon */
+.team-card .icon {
+    font-size: 28px;
+    color: #9519C1;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.team-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #9519C1;
+}
+
+/* Description */
+.team-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.team-card:hover {
+    background: #9519C1;
+    color: white;
+    transform: scale(1.05);
+}
+
+.team-card:hover p {
+    color: white;
+}
+.team-card:hover h3 {
+    color: white;
+}
+.team-card:hover .icon{
+    color: #fff;
+}
+
+/* First Card Styling */
+.product-designer {
+    background: #9519C1;
+    color: white;
+    width: calc(20% - 20px);
+    height: 280px;
+}
+
+.product-designer h3,
+.product-designer p {
+    color: white;
+}
+
+/* Responsive Adjustments */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+    .team-card {
+        width: calc(25% - 20px); /* 4 cards per row */
+    }
+    .product-designer {
+        width: calc(25% - 20px);
+    }
+}
+
+/* Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .team-card {
+        width: calc(33.33% - 20px); /* 3 cards per row */
+    }
+
+    .product-designer {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Small Tablets */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .team-card {
+        width: calc(50% - 20px); /* 2 cards per row */
+        height: auto;
+    }
+
+    .product-designer {
+        width: calc(50% - 20px);
+        height: auto;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 596px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 100%; /* 1 card per row */
+        max-width: 350px;
+    }
+
+    .product-designer {
+        max-width: 370px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Title Styling */
+.main-title {
+    color: #9519C1;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Section Styling */
+.team-section {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container */
+.container-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Team Cards */
+.team-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+    flex: 1 1 calc(20% - 20px); /* 5 cards in one row */
+    box-sizing: border-box;
+}
+
+/* Icon */
+.team-card .icon {
+    font-size: 28px;
+    color: #9519C1;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.team-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #9519C1;
+}
+
+/* Description */
+.team-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.team-card:hover {
+    background: #9519C1;
+    color: white;
+    transform: scale(1.05);
+}
+
+.team-card:hover p {
+    color: white;
+}
+
+/* First Card Styling */
+.product-designer {
+    background: #9519C1;
+    color: white;
+}
+
+.product-designer h3,
+.product-designer p {
+    color: white;
+}
+
+/* Responsive Adjustments */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    .container-team {
+        max-width: 1000px;
+    }
+    .team-card {
+        flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+    }
+}
+
+/* Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .container-team {
+        justify-content: space-evenly;
+    }
+    .team-card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+    }
+}
+
+/* Small Tablets */
+@media (max-width: 768px) {
+    .container-team {
+        justify-content: center;
+        gap: 15px;
+    }
+    .team-card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 596px) {
+    .container-team {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-card {
+        flex: 1 1 100%; /* 1 card per row */
+        max-width: 350px;
+    }
+}
+
+
+
+
+
+
+
+/* FAQ Section */
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #050505;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #fff;
+}
+
+/* FAQ Title */
+.faq-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #9519C1;
+}
+
+/* FAQ Item */
+.faq-item {
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+
+/* Question */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+}
+
+/* Toggle Icon */
+.faq-toggle {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+/* Answer (Initially Hidden) */
+.faq-answer {
+    display: none;
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+.faq-answer.open {
+    max-height: 500px; /* Adjust this value based on your content */
+}
+/* Active State */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+    color: #9519C1;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+    .faq-section {
+        padding: 15px;
+        margin: 30px auto;
+    }
+    .faq-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-question h3 {
+        font-size: 16px;
+    }
+    .faq-toggle {
+        font-size: 20px;
+    }
+    .faq-answer {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .faq-section {
+        padding: 10px;
+        margin: 20px auto;
+        width: 95%;
+    }
+    .faq-title {
+        font-size: 20px;
+    }
+    .faq-question h3 {
+        font-size: 15px;
+    }
+    .faq-toggle {
+        font-size: 18px;
+    }
+    .faq-answer {
+        font-size: 14px;
+    }
+}

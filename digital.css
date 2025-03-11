@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ✅ Business Growth Section */
+.business-growth-section {
+    padding: 60px 20px;
+   color: #fff;
+}
+
+/* ✅ Container */
+/* .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+} */
+
+/* ✅ Content Layout */
+.business-growth-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #fff;
+}
+
+/* ✅ Text Section */
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #9519C1;
+}
+
+/* ✅ Image Section */
+.image-content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* 🖥️ Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .business-growth-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-content,
+    .image-content {
+        max-width: 90%;
+    }
+
+    .text-content h2 {
+        font-size: 24px;
+    }
+
+    .text-content p {
+        font-size: 15px;
+    }
+
+    .image-content {
+        justify-content: center;
+    }
+
+    .image-content img {
+        max-width: 100%;
+    }
+}
+
+/* 📱 Mobile Screens */
+@media (max-width: 576px) {
+    .business-growth-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .image-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-content img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+    }
+}
+
+
+
+
+
+/* ✅ Digital Marketing Section */
+.digital-marketing-section {
+    padding: 60px 20px;
+   
+    text-align: center;
+}
+
+/* ✅ Container */
+/* .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+} */
+
+/* ✅ Section Title */
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #9519C1;
+}
+
+/* ✅ Grid Layout */
+.digital-marketing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+/* ✅ Individual Card */
+.marketing-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+}
+
+.marketing-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ✅ Icon Styling */
+.icon {
+    font-size: 40px;
+    color: #9519C1;
+    background: #EDE7F6;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* ✅ Card Title */
+.marketing-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+/* ✅ Card Description */
+.marketing-card p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 375;
+    line-height: 1.5;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* 🖥️ Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .digital-marketing-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 15px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+}
+
+/* 📱 Mobile Screens */
+@media (max-width: 768px) {
+    .digital-marketing-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+        gap: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .marketing-card {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 35px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .marketing-card h3 {
+        font-size: 16px;
+    }
+
+    .marketing-card p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* ✅ General Styling */
+.digital-marketing-sections {
+    padding: 60px 20px;
+   
+    color: #fff;
+}
+
+.container-market {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ✅ Left Fixed Section */
+.left-fixed-section {
+    flex: 1;
+    max-width: 50%;
+    
+}
+
+.left-fixed-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #9519C1;
+}
+
+.left-fixed-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 275;
+}
+
+/* ✅ Right Slider */
+.right-slider {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+}
+
+/* ✅ Swiper Styles */
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    background: #fff;
+    padding: 50px;
+    border-radius: 30px;  /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+/* ✅ Rounded Curve on All Four Sides */
+.swiper-slide::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px; /* Ensures the curves */
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: -1;
+}
+
+/* ✅ Typography */
+.slide-content h1 {
+    font-size: 48px;
+    color: #7B1FA2;
+    font-weight: 600;
+}
+
+.slide-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.slide-content p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+    font-weight: 375;
+}
+
+/* ✅ Swiper Navigation Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #fff;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7B1FA2;
+}
+
+/* ✅ FIXING THE RESPONSIVE ISSUE */
+
+/* For Tablets & Medium Screens */
+@media (max-width: 992px) {
+    .container-market {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-fixed-section {
+        max-width: 100%;
+    }
+
+    .right-slider {
+        max-width: 100%;
+    }
+
+    .swiper-slide {
+        border-radius: 25px;
+    }
+
+    .slide-content h1 {
+        font-size: 36px;
+    }
+
+    .slide-content h3 {
+        font-size: 18px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .container-market {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-fixed-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .right-slider {
+        max-width: 100%;
+    }
+
+    .swiper-slide {
+        border-radius: 20px;
+    }
+
+    .slide-content h1 {
+        font-size: 28px;
+    }
+
+    .slide-content h3 {
+        font-size: 16px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-size: 16px;
+    }
+}
+
+
+
+/* ✅ CTA Section */
+.cta-section {
+    background-color: #9519C1; /* Purple background */
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* ✅ Container */
+/* .container {
+    max-width: 1000px;
+    margin: auto;
+} */
+
+/* ✅ Heading */
+.cta-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* ✅ Paragraph */
+.cta-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 275;
+}
+
+/* ✅ CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: #000; /* Orange color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .cta-section h2 {
+        font-size: 24px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 50px 15px;
+    }
+
+    .cta-section h2 {
+        font-size: 20px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 576px) {
+    .cta-section {
+        padding: 40px 10px;
+    }
+
+    .cta-section h2 {
+        font-size: 18px;
+    }
+
+    .cta-section p {
+        font-size: 13px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+/* ✅ General Section Styling */
+.choose-marketing-agency {
+    padding: 60px 20px;
+    text-align: center;
+   
+}
+
+.choose-marketing-agency .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ✅ Heading */
+.choose-marketing-agency h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #7B1FA2;
+}
+
+/* ✅ Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ✅ Individual Card */
+.grid-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    border: 2px solid #000;
+}
+
+/* ✅ Hover Effect */
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+/* ✅ Icon Styling */
+.icon {
+    font-size: 30px;
+    /* color: #000; */
+    margin-bottom: 10px;
+}
+
+/* ✅ Card Title */
+.grid-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+/* ✅ Card Description */
+.grid-item p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 375;
+    line-height: 1.5;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .choose-marketing-agency h2 {
+        font-size: 24px;
+    }
+
+    .grid-item {
+        min-height: auto;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .choose-marketing-agency {
+        padding: 50px 15px;
+    }
+
+    .choose-marketing-agency h2 {
+        font-size: 20px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 576px) {
+    .choose-marketing-agency {
+        padding: 40px 10px;
+    }
+
+    .choose-marketing-agency h2 {
+        font-size: 18px;
+    }
+
+    .grid-item {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+/* FAQ Section */
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #050505;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #fff;
+}
+
+/* FAQ Title */
+.faq-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #9519C1;
+}
+
+/* FAQ Item */
+.faq-item {
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+
+/* Question */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Toggle Icon */
+.faq-toggle {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+/* Answer (Initially Hidden) */
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+    font-weight: 375;
+}
+
+/* Active State */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+    color: #9519C1;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+    .faq-section {
+        padding: 15px;
+        margin: 30px auto;
+    }
+    .faq-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-question h3 {
+        font-size: 16px;
+    }
+    .faq-toggle {
+        font-size: 20px;
+    }
+    .faq-answer {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .faq-section {
+        padding: 10px;
+        margin: 20px auto;
+        width: 95%;
+    }
+    .faq-title {
+        font-size: 20px;
+    }
+    .faq-question h3 {
+        font-size: 15px;
+    }
+    .faq-toggle {
+        font-size: 18px;
+    }
+    .faq-answer {
+        font-size: 14px;
+    }
+}
+
+
+
+
